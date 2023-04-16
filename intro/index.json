@@ -1,0 +1,25 @@
+{
+  "title": "Starboard",
+  "description": "Install and first contact",
+  "details": {
+      "steps": [
+      {
+        "title": "Play with Starboard",
+        "text": "step1/text.md"
+      }
+    ],
+    "intro": {
+      "text": "init/init.md",
+      "background": "init/background.sh",
+      "foreground": "init/foreground.sh"
+    },
+    "assets": {
+      "host01": [
+        {"file": "wait-background.sh", "target": "/ks", "chmod": "+x"}
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
